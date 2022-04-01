@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #0d0453;
+}
+
+.container{
+  display: flex;
+  text-align: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.sec1{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 1rem;
+  font-family: 'Secular One', sans-serif;
+  margin-top: 9rem;
+  position: absolute;
+}
+
+.sec1 label{
+  font-size: 1.5rem;
+  color: white;
+  width: 100%;
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+.sec1 input{
+  width: 70%;
+  padding: 0.8rem;
+  background-color: #0d0453;
+  border: none;
+  border-bottom: 2px solid rgb(221, 0, 255);
+  font-size: 1.2rem;
+  color: white;
+}
+
+.sec1 button{
+  width: 40%;
+  margin-top: 2.5rem;
+  padding: 7px;
+  background-color: rgb(2, 204, 255);
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.sec1 button:hover{
+  transform: scale(1.1);
+}
+
+.sec2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(231, 225, 225, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 16px  rgba(193, 190, 190, 0.5);
+  border-radius: 10px;
+  width: 25%;
+  margin:  0 auto;
+  padding: 1.2rem;
+  margin-top: 10rem;
+  position: relative;
+}
+
+.sec2 img{
+  height: 300px;
+}
+
+.sec2 a{
+  text-decoration: none;
+  background-color: white;
+  font-size: 1.2rem;
+  margin-top: 1.8rem;
+  padding: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: rgb(2, 204, 255);
+  color: white;
+  border-radius: 10px;
+}
+
+
+.sec2 a:hover{
+  transform: scale(1.1);
+}
+
+@media (max-width : 300px){
+  .sec1{
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .sec2{
+    width: 90%;
+    margin-top: 18rem;
+  }
+  .sec2 img{
+    height: 200px;
+  }
+}
+
+@media (min-width : 310px) {
+  .sec1{
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .sec2{
+    width: 90%;
+    margin-top: 18rem;
+  }
+
+  .sec2 img{
+    height: 270px;
+  }
+}
+
+@media (min-width: 800px){
+  .sec1{
+    width: 70%;
+  }
+
+  .sec2{
+    width: 70%;
+  }
+}
+
+@media (min-width: 1000px){
+  .sec1{
+    width: 30%;
+  }
+
+  .sec2{
+    width: 50%;
+  }
+}
+
